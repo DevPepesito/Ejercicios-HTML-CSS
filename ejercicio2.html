@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doble encabezado</title>
+  <style>
+    td {
+      padding: 10px;
+      width: 40px;
+      text-align: center;
+    }
+    form {
+      text-align: center;
+      border: solid black 2px;
+      padding: 30px;
+      margin-bottom: 50px;
+      width: min-content;
+    }
+    .tabla {
+      text-align: center;
+      border: solid black 2px;
+      padding: 30px;
+      margin-bottom: 50px;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <h3>Datos personales</h3>
+    <div><input type="text" required placeholder="Nombre"></div><br>
+    <div><input type="text" required placeholder="Apellido"></div><br>
+    <div><input type="mail" required placeholder="E-Mail"></div><br>
+    <div><input type="tel" required placeholder="Teléfono"></div><br>
+    <div><input type="text" required placeholder="Direccion"></div><br>
+    <div><input type="submit"></div>
+  </form>
+  <table class="tabla" border="1px">
+    <h3>Tabla</h3>
+    <tbody>
+      <tr>
+        <td colspan="2">1</td>
+        <td>2</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td rowspan="2">2</td>
+        <td>3</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>3</td>
+        <td>4</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
